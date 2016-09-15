@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Tip Me</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_credentials">Credentials</string>
+    <string name="title_activity_payment_screen">PaymentScreen</string>
+
+    <string name="make_payment">Section 1</string>
+    <string name="view_payment">Section 2</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_entry_screen">EntryScreen</string>
+    <string name="title_activity_payment">Payment</string>
+    <string name="title_activity_view_payments">ViewPayments</string>
+    <string name="title_activity_payment2">Payment2</string>
+    <string name="title_activity_entry_screen2">EntryScreen2</string>
+    <string name="title_activity_recepits">Recepits</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_info_tab">InfoTab</string>
+    <string name="title_activity_billing_info">BillingInfo</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="title_activity_nab">Nab</string>
+
+    <string name="Make_a_Payment">Make a Payment</string>
+    <string name="View_your_Payments">View your Payments</string>
+    <string name="View_your_Receipts">View your Receipts</string>
+    <string name="Profile">Profile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="opendrawer">Open</string>
+    <string name="closedrawer">Close</string>
+    <string name="title_activity_tabs">Tabs</string>
+    <string name="title_activity_register_credit">RegisterCredit</string>
+    <string name="title_activity_credit_info">CreditInfo</string>
+    <string name="title_activity_merchant_account">MerchantAccount</string>
+    <string name="title_activity_make_payment">MakePayment</string>
+</resources>

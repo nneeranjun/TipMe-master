@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="nilay.tipme.MerchantAccount"
+    android:background="@color/bt_white">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Recent"
+        android:id="@+id/recent"
+        android:textColor="@color/bt_black"
+        android:textSize="14dp"
+
+
+
+        android:layout_below="@+id/searchView"
+       />
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/searchView"
+        android:backgroundTint="@color/primary_dark_material_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:hint="Enter a name or email "
+        android:textColorHint="@color/input_login_hint"
+        android:textColorHighlight="@color/bt_black"
+        android:textColor="@color/bt_black"
+        android:textSize="16dp"
+            android:dropDownHeight="200dp"
+        android:layout_marginBottom="20dp"
+        android:dropDownVerticalOffset="50dp"
+        android:dropDownWidth="wrap_content"
+
+
+
+
+        />
+
+
+
+</RelativeLayout>

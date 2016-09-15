@@ -1,0 +1,63 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent" tools:context="nilay.tipme.ViewProfile"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/profilebg"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView"></ImageView>
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/blankprofile"
+        app:civ_border_color="@color/abc_background_cache_hint_selector_material_dark"
+        android:layout_marginTop="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name "
+        android:id="@+id/name"
+        android:textColor="@color/white"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileInfo"
+
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:footerDividersEnabled="true"
+        android:divider="#000000"
+        android:dividerHeight="0.3dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="tip info"
+        android:id="@+id/tipInfo"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"/>
+
+
+</RelativeLayout>
+
+

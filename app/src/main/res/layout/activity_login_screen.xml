@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/loginbg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_marginLeft="22.5dp" android:layout_marginRight="22.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"> <ImageView
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/logo"
+        android:layout_marginTop="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/email"
+            android:layout_marginTop="49dp"
+            android:hint="email"
+            android:layout_marginBottom="0dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="@color/bt_white"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentStart="true"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="17dp"
+
+
+            android:text="email"
+            android:typeface="normal"
+            android:textSize="16dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:hint="password"
+            android:textColorHint="#ffffff"
+            android:layout_below="@+id/email"
+            android:layout_alignParentStart="true"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="17dp"
+            android:layout_marginBottom="40dp"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:text="login"
+            android:id="@+id/btnLogin"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:background="#f7941e"
+            android:onClick="login"
+            android:textStyle="bold"
+            android:layout_below="@+id/password"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+     />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Not registered? "
+            android:id="@+id/registerLink"
+            android:layout_marginTop="61dp"
+            android:textColor="@color/bt_white"
+            android:textStyle="italic"
+            android:clickable="true"
+            android:onClick="goToSignUp"
+            android:textSize="16dp"
+            android:layout_below="@+id/btnLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Forgot your password?"
+            android:id="@+id/forgotLink"
+            android:layout_below="@+id/registerLink"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/facebook"
+            android:layout_below="@+id/forgotLink"
+            android:layout_toStartOf="@+id/imageView4"
+            android:layout_marginRight="15dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/linkedin"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="15dp"/>
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView5"
+            android:src="@drawable/googleplus"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_toEndOf="@+id/imageView4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Privacy policy"
+            android:id="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/imageView4"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Terms of service"
+            android:id="@+id/textView4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/imageView2"
+            android:layout_marginBottom="20dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:id="@+id/signedIn"
+            android:layout_below="@+id/btnLogin"
+            android:layout_alignStart="@+id/forgotLink"
+            android:checked="false" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="nilay.tipme.Tabs"
+    android:weightSum="1">
+
+   <android.support.v7.widget.Toolbar
+        android:id="@+id/app_bar"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:background="#ffffffff"
+       android:minHeight="?attr/actionBarSize"
+       android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+    </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/bt_blue"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabSelectedTextColor="@color/bt_red"
+
+        android:background="#fffffbff" />
+
+
+</LinearLayout>
